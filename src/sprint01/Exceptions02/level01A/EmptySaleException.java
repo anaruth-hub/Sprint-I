@@ -1,4 +1,4 @@
-package sprint01.Exceptions01.level01A;
+package sprint01.Exceptions02.level01A;
 
 public class EmptySaleException extends  Exception {
     public static final String DEFAULT_MESSAGE =

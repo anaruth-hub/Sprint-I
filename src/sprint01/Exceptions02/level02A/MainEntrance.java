@@ -1,4 +1,4 @@
-package sprint01.Exceptions01.level02A;
+package sprint01.Exceptions02.level02A;
 
 public class MainEntrance {
     public static void main(String[] args) {

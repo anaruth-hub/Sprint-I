@@ -1,4 +1,4 @@
-package sprint01.JavaCollections.level01B;
+package sprint01.JavaCollections03.level01B;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package sprint01.JavaCollections.level01A;
+package sprint01.JavaCollections03.level01A;
 
 import java.util.Objects;
 

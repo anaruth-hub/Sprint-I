@@ -1,4 +1,4 @@
-package sprint01.JavaCollections.level01C;
+package sprint01.JavaCollections03.level01C;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package sprint01.Exceptions01.level02A;
+package sprint01.Exceptions02.level02A;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
