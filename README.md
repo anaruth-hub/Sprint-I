@@ -1,214 +1,218 @@
-# 🎓 Sprint I – Programación en Java
+# 🎓 Sprint I – Java Programming
 
-Este repositorio contiene las actividades del Sprint I de Java, organizadas por temas y niveles de dificultad.
-Cada apartado incluye ejercicios para practicar:
+This repository contains the activities for Java Sprint I, organized by topic and difficulty level.
 
-- Programación Orientada a Objetos (POO)
-- Herencia y polimorfismo
+Each section includes practice exercises:
+
+- Object-Oriented Programming (OOP)
+- Inheritance and Polymorphism
 - Interfaces
-- Métodos estáticos y no estáticos
-- Manejo de excepciones``
-- Entrada segura por teclado
+- Static and Non-Static Methods
+- Exception Handling
+- Safe Keyboard Input
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
-Los ejercicios están organizados dentro del paquete principal:
-
-
+The exercises are organized within the main package:
 
 ```
-carrera01
+career01
 │
-├── Herencia y polimorfismo 01
-│ ├── nivel01A → Clases abstractas y jerarquías (Instrumentos)
-│ ├── nivel01B → Métodos estáticos vs no estáticos (Car)
-│ └── nivel02A → Herencia entre clases (Teléfono / Smartphone)
+├── Inheritance and Polymorphism 01
+│ ├── level01A → Abstract Classes and Hierarchies (Instruments)
+│ ├── level01B → Static vs. Non-Static Methods (Car)
+│ └── level02A → Inheritance Between Classes (Phone / Smartphone)
 │
-└── Excepciones01 
-├── nivel01A → Excepción personalizada (EmptySaleException) 
-└── nivel02A → Lectura segura desde teclado (Entrada)
+└── Exceptions01
+├── level01A → Custom Exception (EmptySaleException)
+└── level02A → Safe Reading from Keyboard (Input)
 ```
 
+---
 
+## 🟣 Main Classes
+## 🟣 Auxiliary Classes
+## 🟣 Custom Exceptions
+## 🟣 Main File to Run the Exercise
 
 ---
 
-## 🟣 Clases principales
-## 🟣 Clases auxiliares
-## 🟣 Excepciones personalizadas
-## 🟣 Archivo principal para ejecutar la práctica
+# 📘 Exercise Descriptions
 
 ---
 
-# 📘 Descripción de los Ejercicios
+## 1️⃣ Inheritance and Polymorphism (Inheritance and Polymorphism)
+
+### 🔹 Level 01A – Musical Instruments
+**Objective:** Practice abstract classes, inheritance, and hierarchies.
+
+Includes:
+- Abstract class `Instrument`
+- Subclasses: `Wind Instrument`, `Percussion Instrument`, `String Instrument`
+- Abstract method `play()`
+- Demonstration of static blocks
 
 ---
 
-## 1️⃣ Herencia y polimorfismo (Herencia y Polimorfismo)
+### 🔹 Level 01B – Car Class (Static/Non-Static Methods)
 
-### 🔹 Nivel 01A – Instrumentos musicales
-**Objetivo:** practicar clases abstractas, herencia y jerarquías.
+**Objective:** Understand the difference between static and instance methods.
 
-Incluye:
-- Clase abstracta `Instrumento`
-- Subclases: `Instrumento de viento`, `Instrumento de percusión`, `Instrumento de cuerda`
-- Método abstracto `play()`
-- Demostración de bloques estáticos
+Includes:
+- Static vs. Instantiated Fields
+- Utility Static Methods
+- Methods that operate on the object's state.
 
 ---
 
-### 🔹 Nivel 01B – Clase de automóvil (métodos estáticos/no estáticos)
+### 🔹 Level 02A – Phone / Smartphone
 
-**Objetivo:** comprender la diferencia entre métodos estáticos y de instancia.
+**Objective:** Explore inheritance and interfaces in greater depth.
 
-Incluye:
-- Campos estáticos vs instanciados
-- Métodos estáticos de utilidad
-- Métodos que operan sobre el estado del objeto.
-
----
-
-### 🔹 Nivel 02A – Teléfono / Smartphone
-
-**Objetivo:** profundizar en herencia e interfaces.
-
-Incluye:
-- Clase base: `Teléfono`
-- Subclase: `Smartphone`
-- Interfaces adicionales según enunciado
-- Uso de @Override
+Includes:
+- Base class: `Telefono`
+- Subclass: `Smartphone`
+- Additional interfaces as per the instructions
+- Use of @Override
 
 ---
 
-# 2️⃣ Excepciones – Manejo y Creación de Excepciones
+# 2️⃣ Exceptions – Handling and Creating Exceptions
 
-### 🔹 Nivel 01A: excepción de venta vacía
+### 🔹 Level 01A: Empty Sale Exception
 
-**Objetivo:** crear una excepción personalizada.
+**Objective:** Create a custom exception.
 
-Incluye:
-- Clase `Producto`
-- Clase `Venta` con lista de productos
-- Excepción `EmptySaleException`
-- Manejo de `IndexOutOfBoundsException`
+Includes:
+- Class `Product`
+- Class `Sale` with a product list
+- `EmptySaleException`
+- Handling `IndexOutOfBoundsException`
 
 ---
 
-### 🔹 Nivel 02A – Lector de entrada de consola (Entrada segura por teclado)
+### 🔹 Level 02A – Console Input Reader (Secure Keyboard Input)
 
-**Objetivo:** crear una clase utilitaria para lectura validada desde teclado.
+**Objective:** Create a utility class for validated keyboard input.
 
-Incluye:
-- Clase estática `Entrada`
-- Un único objeto `Escáner`
-- Métodos validados:
+Includes:
+- Static class `Input`
+- A single object `Scanner`
+- Validated methods:
 
-Con InputMismatchException:
-- `readByte(mensaje de cadena)`
-- `readInt(mensaje de cadena)`
-- `readFloat(mensaje de cadena)`
-- `readDouble(mensaje de cadena)`
+With InputMismatchException:
+- `readByte(string message)`
+- `readInt(string message)`
+- `readFloat(string message)`
+- `readDouble(string message)`
 
-Con excepción personalizada `EntranceException`:
-- `readChar(mensaje de cadena)`
-- `readString(mensaje de cadena)`
-- `leerSíNo(mensaje de cadena)`
+With custom exception `EntranceException`:
+- `readChar(string message)`
+- `readString(string message)`
+- `readYesNo(string message)`
 
-Características:
-- Bucle de reintentos hasta entrada válida
-- Mensajes personalizados
-- Código limpio y reutilizable
+Features:
+- Retry loop until valid input
+- Custom messages
+- Clean and reusable code
 
-## 🟩 3. Colecciones Java (Colecciones)
+## 🟩 3. Java Collections (Collections)
 
-En esta sección se practican las colecciones más usadas de la librería `java.util`, como:
-- `ListaArray`
+This section covers the most commonly used collections from the `java.util` library, such as:
+- `ListArray`
 - `LinkedHashSet`
-- `Mapa Hash`
-- `ListIterador`
+- `Map` Hash`
+- `ListIterator`
 
-Cada ejercicio desarrolla un aspecto clave de las colecciones: duplicados, orden, iteración segura, uso de mapas y lectura/escritura de archivos.
+Each exercise develops a key aspect of collections: duplicates, ordering, safe iteration, using maps, and reading/writing files.
 
----
+--
 
-### 🔹 Nivel 01A — Ejercicio 1: Duplicados (ArrayList & LinkedHashSet)
+### 🔹 Level 01A — Exercise 1: Duplicates (ArrayList & LinkedHashSet)
 
-**Objetivos:**
-- Crear una lista (`ArrayList`) con los meses del año dejando fuera “August”.
-- Insertar “August” en su posición correcta.
-- Comprobar el comportamiento de los duplicados.
-- Convertir la lista en un `LinkedHashSet` para eliminar duplicados.
-- Registrar la colección con: 
-- `para-cada` 
-- `Iterador`
+**Objectives:**
+- Create an `ArrayList` with the months of the year, excluding “August”.
 
-**Clases creadas:**
-- `Mes.java`
-- `MesesMain.java`
+- Insert “August” in its correct position.
 
-**Estado del ejercicio:** ✔️ *Completado*
+- Verify the behavior of duplicates.
 
----
+- Convert the list into a `LinkedHashSet` to remove duplicates.
 
-### 🔹 Nivel 01B — Ejercicio 2: Iteradores y Modificación Segura
+- Register the collection with:
+- `for-each`
+- `Iterator`
 
-**Objetivos:**
-- Practicar el uso de `ListIterator`.
-- Modificar elementos mientras se repiten sin generar errores.
-- Evitar `ConcurrentModificationException`.
+**Classes created:**
+- `Month.java`
+- `MonthsMain.java`
 
-**Estado del ejercicio:** ⬜ *Pendiente*
+**Exercise status:** ✔️ *Completed*
 
 ---
 
-### 🔹 Nivel 02A — Ejercicio 3: HashMap y Contadores
+### 🔹 Level 01B — Exercise 2: Iterators and Safe Modification
 
-**Objetivos:**
-- Usar `HashMap<String, Integer>` para contar elementos.
-- Registrar claves y valores.
-- Ordenar e imprimir resultados.
+**Objectives:**
+- Practice using `ListIterator`.
 
-**Estado del ejercicio:** ⬜ *Pendiente*
+- Modify elements while iterating without generating errors.
 
----
+- Avoid `ConcurrentModificationException`.
 
-### 🔹 Nivel 02B — Ejercicio 4: Lectura y Escritura de Archivos
-
-**Objetivos:**
-- Leer archivos con `BufferedReader`.
-- Procesar datos y almacenarlos en una colección.
-- Crear un archivo de salida con los resultados.
-
-**Estado del ejercicio:** ⬜ *Pendiente*
-
+**Exercise status:** ⬜ *Pending*
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+### 🔹 Level 02A — Exercise 3: HashMap and Counters
 
--Java JDK 21
-- Edición comunitaria IntelliJ IDEA
--Git y GitHub
-- Consola / Terminal
+**Objectives:**
+- Use `HashMap<String, Integer>` to count elements.
+
+- Register keys and values.
+
+- Sort and print results.
+
+**Exercise Status:** ⬜ *Pending*
 
 ---
 
-## ▶️ Cómo Ejecutar los Ejercicios
+### 🔹 Level 02B — Exercise 4: Reading and Writing Files
 
-1. Clonar el repositorio: 
-```golpecito 
-clon de git https://github.com/anaruth-hub/Sprint-I.git
+**Objectives:**
+- Read files using `BufferedReader`.
+
+- Process data and store it in a collection.
+
+- Create an output file with the results.
 
 
-Abre el proyecto en IntelliJ IDEA
-Navega al ejercicio deseado dentro de:
+**Exercise Status:** ⬜ *Pending*
+
+---
+
+## 🛠️ Technologies Used
+
+- Java JDK 21
+- IntelliJ IDEA Community Edition
+- Git and GitHub
+- Console / Terminal
+
+---
+
+## ▶️ How to Run the Exercises
+
+1. Clone the repository:
+```git clone https://github.com/anaruth-hub/Sprint-I.git
+
+Open the project in IntelliJ IDEA
+Navigate to the desired exercise within:
+
 src/sprint01/...
-Ejecuta el archivo principal...
+Run the main file...
 
+## 🤝 Contributions
 
-## 🤝 Aportaciones
-
-Este repositorio forma parte del material de aprendizaje del Sprint I.
-Se aceptan sugerencias, mejoras o correcciones.
+This repository is part of the learning materials for Sprint I. Suggestions, improvements, or corrections are welcome.
